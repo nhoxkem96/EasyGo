@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="KGk-i7-Jjw" customClass="TextContent">
+            <rect key="frame" x="0.0" y="0.0" width="441" height="149"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="441" height="148"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfv-bs-MHc">
+                        <string key="text">Nổi bật trong cung đường du lịch miền Trung, phố cổ Hội An như một bức tranh mộc mạc, giản dị và nên thơ trong lòng du khách. Dù là ngày hay đêm, Hội An vẫn mang trong mình những vẻ đẹp lôi cuốn khác nhau. Chính vì thế mà Hội An luôn là điểm đến yêu thích của rất nhiều khách du lịch trong và ngoài nước. Dưới đây là những kinh nghiệm bổ ích khi đi du lịch phố cổ Hội An dành cho bạn!\n\nHướng dẫn chọn phương tiện đến du lịch phố cổ Hội An\n\nHiện nay các hãng hàng không như Vietnamairline, Jetstar, Vietjetair đều có khai thác các đường bay từ TP. HCM và Hà Nội đến Đà Nẵng. Nếu muốn mua được vé rẻ, bạn nên mua vé trước khoảng 3 đến 6 tháng.\n\nTừ Thành phố Đà Nẵng đi về Hội An có hai cách:\n\n+ Bạn có thể đi theo quốc lộ 1 về phía Nam khoảng 27km đến đường Vĩnh Điện rồi rẽ trái thêm 10km. Vào Hội An theo đường Huỳnh Thúc Kháng có thể ghé thăm Tháp Chàm Bằng Anh ở Vĩnh Điện.\n\n\n+ Con đường thứ hai gần hơn, vắng hơn, đi từ Trung Tâm Đà Nẵng qua cầu sông Hàn, vào tỉnh lộ Đà Nẵng – Hội An, ghé thăm Ngũ Hành Sơn, đến Hội An k"</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Kfv-bs-MHc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="1ip-VQ-d1t"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Kfv-bs-MHc" secondAttribute="bottom" constant="10" id="9m7-ov-Ha3"/>
+                    <constraint firstAttribute="trailing" secondItem="Kfv-bs-MHc" secondAttribute="trailing" constant="20" id="Wy6-qu-875"/>
+                    <constraint firstItem="Kfv-bs-MHc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="d1N-eG-4Tj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblContent" destination="Kfv-bs-MHc" id="ePU-kn-gaK"/>
+            </connections>
+            <point key="canvasLocation" x="474.5" y="273.5"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BottomCell" rowHeight="49" id="LTj-2N-O9S" customClass="BottomCell">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="49"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LTj-2N-O9S" id="9gn-Z0-YSy">
+                <frame key="frameInset" width="380" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e16-Kx-Z4X">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="e16-Kx-Z4X" secondAttribute="height" multiplier="1:1" id="e63-af-LgQ"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="like">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="clickBtnLike:" destination="LTj-2N-O9S" eventType="touchUpInside" id="gp8-eO-BGE"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oe-M5-xZ0">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="9oe-M5-xZ0" secondAttribute="height" multiplier="1:1" id="hcR-Xd-v1U"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="IconButtonShare"/>
+                        <connections>
+                            <action selector="clickBtnShare:" destination="LTj-2N-O9S" eventType="touchUpInside" id="8gL-0y-dYj"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aly-fc-mID">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Aly-fc-mID" secondAttribute="height" multiplier="1:1" id="4jg-zD-Q7v"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="rp_fb"/>
+                        <connections>
+                            <action selector="clickBtnReport:" destination="LTj-2N-O9S" eventType="touchUpInside" id="Byy-6i-vPk"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4T-kh-13F">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="M4T-kh-13F" secondAttribute="height" multiplier="1:1" id="VzW-Zx-B7j"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="IconCommentButton"/>
+                        <connections>
+                            <action selector="clickBtnComment:" destination="LTj-2N-O9S" eventType="touchUpInside" id="wYW-6s-MbT"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M4T-kh-13F" firstAttribute="leading" secondItem="e16-Kx-Z4X" secondAttribute="trailing" constant="30" id="6cY-AG-VAL"/>
+                    <constraint firstItem="e16-Kx-Z4X" firstAttribute="leading" secondItem="9gn-Z0-YSy" secondAttribute="leading" constant="17" id="7w2-HH-pJ0"/>
+                    <constraint firstItem="M4T-kh-13F" firstAttribute="centerY" secondItem="e16-Kx-Z4X" secondAttribute="centerY" id="9Of-ie-89G"/>
+                    <constraint firstItem="9oe-M5-xZ0" firstAttribute="leading" secondItem="M4T-kh-13F" secondAttribute="trailing" constant="30" id="AwX-zd-0Xs"/>
+                    <constraint firstItem="Aly-fc-mID" firstAttribute="leading" secondItem="e16-Kx-Z4X" secondAttribute="trailing" constant="278" id="EC2-rY-x1O"/>
+                    <constraint firstItem="Aly-fc-mID" firstAttribute="height" secondItem="e16-Kx-Z4X" secondAttribute="height" id="K46-2R-oPJ"/>
+                    <constraint firstAttribute="trailing" secondItem="Aly-fc-mID" secondAttribute="trailing" constant="25" id="QFd-Tz-C7H"/>
+                    <constraint firstItem="9oe-M5-xZ0" firstAttribute="height" secondItem="e16-Kx-Z4X" secondAttribute="height" id="c6M-US-iTe"/>
+                    <constraint firstItem="e16-Kx-Z4X" firstAttribute="centerY" secondItem="9gn-Z0-YSy" secondAttribute="centerY" id="oad-fw-rpd"/>
+                    <constraint firstItem="M4T-kh-13F" firstAttribute="height" secondItem="e16-Kx-Z4X" secondAttribute="height" id="qyQ-OS-MvG"/>
+                    <constraint firstItem="9oe-M5-xZ0" firstAttribute="centerY" secondItem="e16-Kx-Z4X" secondAttribute="centerY" id="vkZ-Wa-FyO"/>
+                    <constraint firstItem="e16-Kx-Z4X" firstAttribute="height" secondItem="9gn-Z0-YSy" secondAttribute="height" multiplier="2:5" id="yPG-bB-I6A"/>
+                    <constraint firstItem="Aly-fc-mID" firstAttribute="centerY" secondItem="e16-Kx-Z4X" secondAttribute="centerY" id="yVj-8V-vMC"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="EC2-rY-x1O"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnLike" destination="e16-Kx-Z4X" id="T9z-HZ-oFx"/>
+                <outlet property="clickBtnComment" destination="M4T-kh-13F" id="35g-JC-MGm"/>
+                <outlet property="clickBtnReport" destination="Aly-fc-mID" id="0if-kq-gHT"/>
+                <outlet property="clickBtnShare" destination="9oe-M5-xZ0" id="tmU-F0-np7"/>
+            </connections>
+            <point key="canvasLocation" x="221" y="50.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="IconButtonShare" width="42" height="40"/>
+        <image name="IconCommentButton" width="41" height="36"/>
+        <image name="like" width="34" height="34"/>
+        <image name="rp_fb" width="34" height="34"/>
+    </resources>
+</document>

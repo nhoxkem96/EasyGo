@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ComposePostController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="PostView" id="3a4-jZ-Sih" customClass="PostView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PX-2h-97T">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9PX-2h-97T" secondAttribute="height" multiplier="1:1" id="NTS-B5-ZYV"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="ic_person_add"/>
+                    <connections>
+                        <action selector="clickBtnUserTag:" destination="-1" eventType="touchUpInside" id="XJ9-6T-iOb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Joz-Lt-rPz">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Joz-Lt-rPz" secondAttribute="height" multiplier="1:1" id="7iq-OU-kHX"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="ic_add_a_photo"/>
+                    <connections>
+                        <action selector="clickBtnAddPhotoGroup:" destination="-1" eventType="touchUpInside" id="ONc-4b-9ld"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSU-0W-tU1">
+                    <state key="normal" backgroundImage="hideKeyboard"/>
+                    <connections>
+                        <action selector="clickBtnHideKeyboard:" destination="-1" eventType="touchUpInside" id="UhV-l1-gsX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CSU-0W-tU1" firstAttribute="centerY" secondItem="3a4-jZ-Sih" secondAttribute="centerY" id="44S-2y-xBl"/>
+                <constraint firstItem="9PX-2h-97T" firstAttribute="centerY" secondItem="Joz-Lt-rPz" secondAttribute="centerY" id="66v-kk-PJO"/>
+                <constraint firstItem="CSU-0W-tU1" firstAttribute="width" secondItem="9PX-2h-97T" secondAttribute="width" id="I50-Ec-bKB"/>
+                <constraint firstItem="Joz-Lt-rPz" firstAttribute="leading" secondItem="3a4-jZ-Sih" secondAttribute="leading" constant="15" id="Ipp-pm-28W"/>
+                <constraint firstAttribute="trailing" secondItem="CSU-0W-tU1" secondAttribute="trailing" constant="20" id="OaK-5z-w8s"/>
+                <constraint firstItem="Joz-Lt-rPz" firstAttribute="centerY" secondItem="3a4-jZ-Sih" secondAttribute="centerY" id="UTJ-pQ-P7a"/>
+                <constraint firstItem="9PX-2h-97T" firstAttribute="height" secondItem="Joz-Lt-rPz" secondAttribute="height" id="fb8-k6-6h4"/>
+                <constraint firstItem="9PX-2h-97T" firstAttribute="leading" secondItem="Joz-Lt-rPz" secondAttribute="trailing" constant="30" id="jEM-ZU-AK0"/>
+                <constraint firstItem="CSU-0W-tU1" firstAttribute="height" secondItem="9PX-2h-97T" secondAttribute="height" id="tIc-mr-4ma"/>
+                <constraint firstItem="Joz-Lt-rPz" firstAttribute="height" secondItem="3a4-jZ-Sih" secondAttribute="height" multiplier="1/2" id="vWD-MX-o3W"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="86" y="-776"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hideKeyboard" width="24" height="24"/>
+        <image name="ic_add_a_photo" width="24" height="24"/>
+        <image name="ic_person_add" width="24" height="24"/>
+    </resources>
+</document>

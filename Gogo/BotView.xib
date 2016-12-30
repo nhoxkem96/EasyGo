@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BotView" rowHeight="130" id="KGk-i7-Jjw" customClass="BotView">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="434" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxp-QG-ahy">
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDu-5W-qlA">
+                                <color key="backgroundColor" red="0.1209098978" green="0.53607532199999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eDu-5W-qlA" secondAttribute="height" multiplier="8:1" id="RED-3F-2pJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Tiếp tục">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBtnDangBaiViet:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kpm-pw-pXX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eDu-5W-qlA" firstAttribute="leading" secondItem="vxp-QG-ahy" secondAttribute="leading" constant="20" id="O0T-Z2-H6F"/>
+                            <constraint firstItem="eDu-5W-qlA" firstAttribute="centerY" secondItem="vxp-QG-ahy" secondAttribute="centerY" id="aO2-VY-8bR"/>
+                            <constraint firstAttribute="trailing" secondItem="eDu-5W-qlA" secondAttribute="trailing" constant="20" id="cSu-VY-Joi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="vxp-QG-ahy" secondAttribute="bottom" id="JsL-ej-Ugf"/>
+                    <constraint firstAttribute="trailing" secondItem="vxp-QG-ahy" secondAttribute="trailing" id="Vic-0o-Plm"/>
+                    <constraint firstItem="vxp-QG-ahy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Vmf-i8-GPH"/>
+                    <constraint firstItem="vxp-QG-ahy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="irb-2b-y68"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnDangBaiViet" destination="eDu-5W-qlA" id="egg-d3-ed4"/>
+            </connections>
+            <point key="canvasLocation" x="229" y="67"/>
+        </tableViewCell>
+    </objects>
+</document>

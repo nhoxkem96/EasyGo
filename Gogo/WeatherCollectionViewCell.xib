@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WeatherCollectionViewCell" id="9ej-Zk-Zuw" customClass="WeatherCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="207" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="207" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vg-kn-klD">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeT-DX-c7w">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aW-90-Iy9">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOh-Wu-Rze">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="2vg-kn-klD" firstAttribute="centerX" secondItem="pOh-Wu-Rze" secondAttribute="centerX" id="2X3-wI-hoa"/>
+                <constraint firstItem="SeT-DX-c7w" firstAttribute="top" secondItem="2vg-kn-klD" secondAttribute="bottom" constant="10" id="IHQ-Ru-2VW"/>
+                <constraint firstItem="pOh-Wu-Rze" firstAttribute="top" secondItem="9ej-Zk-Zuw" secondAttribute="top" constant="10" id="L3R-Je-5p0"/>
+                <constraint firstItem="0aW-90-Iy9" firstAttribute="top" secondItem="SeT-DX-c7w" secondAttribute="bottom" constant="10" id="P9h-MR-d6A"/>
+                <constraint firstItem="pOh-Wu-Rze" firstAttribute="centerX" secondItem="9ej-Zk-Zuw" secondAttribute="centerX" id="TrG-IB-Y0V"/>
+                <constraint firstItem="0aW-90-Iy9" firstAttribute="centerX" secondItem="SeT-DX-c7w" secondAttribute="centerX" id="ac3-tT-X3r"/>
+                <constraint firstItem="SeT-DX-c7w" firstAttribute="centerX" secondItem="2vg-kn-klD" secondAttribute="centerX" id="eqF-F4-Vs1"/>
+                <constraint firstItem="2vg-kn-klD" firstAttribute="top" secondItem="pOh-Wu-Rze" secondAttribute="bottom" constant="10" id="zNV-e6-Zjt"/>
+            </constraints>
+            <size key="customSize" width="207" height="139"/>
+            <connections>
+                <outlet property="iconWeather" destination="2vg-kn-klD" id="LI3-NP-75i"/>
+                <outlet property="lblDay" destination="pOh-Wu-Rze" id="kTm-ku-ZNo"/>
+                <outlet property="lblHighTemperature" destination="SeT-DX-c7w" id="dgy-JW-63M"/>
+                <outlet property="lblLowTemperature" destination="0aW-90-Iy9" id="cPe-zL-Kw2"/>
+            </connections>
+            <point key="canvasLocation" x="-82.5" y="-222.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
